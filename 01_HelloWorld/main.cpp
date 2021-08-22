@@ -4,9 +4,9 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello C++!" << endl;
+    int a = 10;
 
-    system("pause");
+    cout << "a = " << a << endl;
 
     return 0;
 }
