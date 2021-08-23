@@ -14,21 +14,9 @@ int main()
 {
     Student arr[3] =
     {
-        {
-            "ZhangSan",
-            18,
-            80.0
-        },
-        {
-            "LiSi",
-            20,
-            95.5
-        },
-        {
-            "WangWu",
-            19,
-            62.0
-        }
+        {"ZhangSan", 18, 80.0},
+        {"LiSi", 20, 95.5},
+        {"WangWu", 19, 62.0}
     };
 
     for (int i = 0; i < 3; i++)
