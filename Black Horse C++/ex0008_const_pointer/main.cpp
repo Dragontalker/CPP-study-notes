@@ -7,12 +7,15 @@ int main()
     int a = 10;
     int b = 20;
 
-    const int* p = &a;
+    const int* ptr1 = &a;
+    ptr1 = &b;
 
-    p = &b;
+    int* const ptr2 = &a;
+    *(ptr2) = 30;
 
-    cout << "The value pointed by ptr = " << *(p) << endl;
+    cout << "The value pointed by ptr1 = " << *(ptr1) << endl;
 
+    cout << "The value pointed by ptr2 = " << *(ptr2) << endl;
 
     return 0;
 }
