@@ -12,6 +12,9 @@ struct Hero
     string gender;
 };
 
+void printHero(struct Hero[], int);
+void bubbleSort(struct Hero[], int);
+
 int main()
 {
     struct Hero heroArray[N] =
@@ -23,13 +26,38 @@ int main()
         {"DiaoChan", 19, "Female"}
     };
 
-    for (int i = 0; i < N; i++)
+    printHero(heroArray, N);
+
+    bubbleSort(heroArray, N);
+
+    printHero(heroArray, N);
+
+    return 0;
+}
+
+void printHero(struct Hero heroArray[], int len)
+{
+    for (int i = 0; i < len; i++)
     {
         struct Hero tempHero = heroArray[i];
         cout << "Hero's name = " << tempHero.name
              << ", age = " << tempHero.age
              << ", gender = " << tempHero.gender << endl;
     }
+}
 
-    return 0;
+void bubbleSort(struct Hero heroArray[], int len)
+{
+    for (int i = 0; i < len; i++)
+    {
+        for (int j = 0; j < len - i - 1; j++)
+        {
+            if (heroArray[j].age > heroArray[j + 1].age)
+            {
+                struct Hero temp = heroArray[j];
+                heroArray[j] = heroArray[j + 1];
+                heroArray[j + 1] = temp;
+            }
+        }
+    }
 }
