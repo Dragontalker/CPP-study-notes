@@ -12,13 +12,20 @@ struct Student
 struct Teacher
 {
     string tName;
-    struct Student sArray[];
+    struct Student sArray[5];
 };
 
 void allocateSpace(struct Teacher[], int);
+void printStudent(struct Student);
+void printTeacher(struct Teacher);
 
 int main()
 {
+    struct Teacher tArray[3];
+
+    int len = sizeof(tArray) / sizeof(tArray[0]);
+
+    allocateSpace(tArray, len);
 
     return 0;
 }
@@ -42,3 +49,5 @@ void allocateSpace(struct Teacher tArray[], int len)
 
     }
 }
+
+
