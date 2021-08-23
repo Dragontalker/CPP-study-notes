@@ -10,12 +10,12 @@ struct Student
     double score;
 };
 
-void printStudent1(struct Student);
-void printStudent2(struct Student*);
+void printStudent1(Student);
+void printStudent2(const Student*);
 
 int main()
 {
-    struct Student s1;
+    Student s1;
     s1.name = "Tom";
     s1.age = 18;
     s1.score = 95.5;
@@ -27,14 +27,14 @@ int main()
     return 0;
 }
 
-void printStudent1(struct Student student)
+void printStudent1(Student student)
 {
     cout << "Name = " << student.name << endl;
     cout << "Age = " << student.age << endl;
     cout << "Score = " << student.score << endl;
 }
 
-void printStudent2(struct Student* ptr)
+void printStudent2(const Student* ptr)
 {
     cout << "Name = " << ptr->name << endl;
     cout << "Age = " << ptr->age << endl;
