@@ -21,6 +21,11 @@ int main()
         cout << arr2[i] << endl;
     }
 
+    int arr3[] = {90, 80, 70, 60, 50, 40, 30, 20, 10};
+
+    for (int i = 0; i < 9; i++) {
+        cout << arr3[i] << endl;
+    }
 
     return 0;
 }
