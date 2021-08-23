@@ -14,6 +14,14 @@ struct Hero
 
 int main()
 {
+    struct Hero heroArray[N] =
+    {
+        {"LiuBei", 23, "Male"},
+        {"GuanYu", 22, "Male"},
+        {"ZhangFei", 20, "Male"},
+        {"ZhaoYun", 21, "Male"},
+        {"DiaoChan", 19, "Female"}
+    };
 
     return 0;
 }
