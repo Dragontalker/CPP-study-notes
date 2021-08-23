@@ -3,7 +3,7 @@
 
 using namespace std;
 
-struct student
+struct Student
 {
     string name;
     int age;
@@ -12,13 +12,16 @@ struct student
 
 int main()
 {
-    student stu;
+    Student stu;
     stu.name = "Tom";
     stu.age = 12;
     stu.score = 80;
 
     cout << "Student name: " << stu.name << endl;
     cout << "Student age: " << stu.age << endl;
+
+    stu.score = 100;
+
     cout << "Student score: " << stu.score << endl;
 
     return 0;
