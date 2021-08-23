@@ -1,12 +1,22 @@
 #include <iostream>
 
+#define N 10
+
 using namespace std;
 
 void bubbleSort(int*, int);
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    int arr[N] = {4, 3, 6, 9, 1, 2, 10, 8, 7, 5};
+
+    bubbleSort(arr, N);
+
+    for (int i = 0; i < N; i++)
+    {
+        cout << "element #" << i + 1 << " = " << arr[i] << endl;
+    }
+
     return 0;
 }
 
