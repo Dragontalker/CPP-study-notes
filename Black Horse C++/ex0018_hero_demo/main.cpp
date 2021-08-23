@@ -26,9 +26,15 @@ int main()
         {"DiaoChan", 19, "Female"}
     };
 
+    cout << "Before bubble sort..." << endl;
+
     printHero(heroArray, N);
 
     bubbleSort(heroArray, N);
+
+    cout << "" << endl;
+
+    cout << "After bubble sort..." << endl;
 
     printHero(heroArray, N);
 
