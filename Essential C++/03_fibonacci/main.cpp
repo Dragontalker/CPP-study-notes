@@ -1,27 +1,37 @@
 #include <iostream>
-#include <cstdlib>
 
 using namespace std;
 
-int fibon_elem(int);
+int fibon_elem(int, int &);
 
 int main()
 {
-    int result = fibon_elem(20);
+    int pos;
+    cout << "Please enter a position: ";
+    cin >> pos;
 
-    cout << "The result of 20 = " << result << endl;
+    int elem;
+    if (fibon_elem(pos, elem))
+    {
+        cout << "Element # " << pos
+             << " is " << elem << endl;
+    }
+    else
+    {
+        cout << "Sorry. Could  not calculate element # "
+             << pos << endl;
+    }
 
     return 0;
 }
 
-int fibon_elem(int pos)
+int fibon_elem(int pos, int &elem)
 {
-    if (pos <= 0)
+    if (pos <= 0 || pos > 1024)
     {
-        exit(-1);
+        elem = 0;
+        return 0;
     }
-
-    int elem = 1;
 
     int n_1 = 1;
     int n_2 = 1;
@@ -33,5 +43,5 @@ int fibon_elem(int pos)
         n_1 = elem;
     }
 
-    return elem;
+    return true;
 }
