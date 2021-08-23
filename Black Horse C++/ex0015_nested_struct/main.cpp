@@ -21,6 +21,11 @@ struct Teacher
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    struct Student student = {"Tom", 18, 95.5};
+    struct Teacher teacher = {1, "Jack", 53, student};
+
+    cout << "Teacher's name = " << teacher.name << endl;
+    cout << "His student's name = " << teacher.student.name << endl;
+
     return 0;
 }
