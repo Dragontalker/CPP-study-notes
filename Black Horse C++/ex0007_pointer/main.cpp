@@ -6,9 +6,10 @@ int main()
 {
     int a = 10;
 
-    int *ptr = &a;
+    int* ptr;
+    ptr = &a;
 
-    cout << "The integer ptr points at = " << *ptr << endl;
+    cout << "The integer ptr points at = " << *(ptr) << endl;
 
     return 0;
 }
