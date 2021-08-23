@@ -10,6 +10,12 @@ struct Student
     double score;
 };
 
+struct Teacher
+{
+    string name;
+    struct Student stuArray[];
+};
+
 int main()
 {
 
