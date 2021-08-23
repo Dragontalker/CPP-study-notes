@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1629728950 source:c:\users\richa\desktop\githubrepos\cpp-study-notes\black horse c++\ex0006_modularity\swap.cpp
+	"swap.h"
+
+1629728950 c:\users\richa\desktop\githubrepos\cpp-study-notes\black horse c++\ex0006_modularity\swap.h
+	<iostream>
+
