@@ -13,9 +13,13 @@ int main()
     int* const ptr2 = &a;
     *(ptr2) = 30;
 
+    const int* const ptr3 = &a;
+
     cout << "The value pointed by ptr1 = " << *(ptr1) << endl;
 
     cout << "The value pointed by ptr2 = " << *(ptr2) << endl;
+
+    cout << "The value pointed by ptr3 = " << *(ptr3) << endl;
 
     return 0;
 }
