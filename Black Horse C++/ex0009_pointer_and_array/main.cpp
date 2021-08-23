@@ -14,6 +14,11 @@ int main()
     cout << "The second element in arr = " << *(ptr + 1) << endl;
     cout << "The last element in arr = " << *(ptr + N - 1) << endl;
 
+    for (int i = 0; i < N; i++) {
+        cout << *(ptr) << endl;
+        ptr++;
+    }
+
 
     return 0;
 }
