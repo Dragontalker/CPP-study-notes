@@ -10,6 +10,14 @@ struct Student
     double score;
 };
 
+struct Teacher
+{
+    int id;
+    string name;
+    int age;
+    struct Student student;
+};
+
 
 int main()
 {
