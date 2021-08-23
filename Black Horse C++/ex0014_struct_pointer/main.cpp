@@ -13,6 +13,13 @@ struct Student
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    struct Student s1 = {"Tom", 18, 100.0};
+
+    struct Student* ptr = &s1;
+
+    cout << "Student's name using pointer = " << ptr->age << endl;
+    cout << "Student's age using pointer = " << ptr->age << endl;
+    cout << "Student's score using pointer = " << ptr->score << endl;
+
     return 0;
 }
