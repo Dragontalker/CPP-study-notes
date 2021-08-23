@@ -10,7 +10,7 @@ struct Student
     double score;
 };
 
-void printStudent(Student);
+void printStudent(struct Student);
 
 int main()
 {
@@ -24,7 +24,7 @@ int main()
     return 0;
 }
 
-void printStudent(Student student)
+void printStudent(struct Student student)
 {
     cout << "Name = " << student.name << endl;
     cout << "Age = " << student.age << endl;
