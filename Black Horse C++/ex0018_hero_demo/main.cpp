@@ -23,5 +23,13 @@ int main()
         {"DiaoChan", 19, "Female"}
     };
 
+    for (int i = 0; i < N; i++)
+    {
+        struct Hero tempHero = heroArray[i];
+        cout << "Hero's name = " << tempHero.name
+             << ", age = " << tempHero.age
+             << ", gender = " << tempHero.gender << endl;
+    }
+
     return 0;
 }
