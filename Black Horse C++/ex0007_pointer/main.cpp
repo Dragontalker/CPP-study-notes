@@ -15,5 +15,7 @@ int main()
     cout << "The value of a = " << a << endl;
     cout << "The dereferenced value of ptr = " << *(ptr) << endl;
 
+    cout << "The size of ptr = " << sizeof(ptr) << endl;
+
     return 0;
 }
