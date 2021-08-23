@@ -7,22 +7,22 @@ struct Student
 {
     string name;
     int age;
-    int score;
+    double score;
 };
 
 int main()
 {
-    Student stu;
-    stu.name = "Tom";
-    stu.age = 12;
-    stu.score = 80;
+    struct Student s1;
+    s1.name = "Tom";
+    s1.age = 12;
+    s1.score = 80.0;
 
-    cout << "Student name: " << stu.name << endl;
-    cout << "Student age: " << stu.age << endl;
+    cout << "Student name: " << s1.name << endl;
+    cout << "Student age: " << s1.age << endl;
 
-    stu.score = 100;
+    s1.score = 100.0;
 
-    cout << "Student score: " << stu.score << endl;
+    cout << "Student score: " << s1.score << endl;
 
     return 0;
 }
