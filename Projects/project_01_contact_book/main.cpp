@@ -1,6 +1,16 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
+
+struct Person
+{
+    string m_Name;
+    int m_Sex;
+    int m_Age;
+    string m_Phone;
+    string m_Addr;
+};
 
 void showMenu();
 
@@ -59,5 +69,3 @@ void showMenu()
     cout << "***** 0. Exit contact book ***" << endl;
     cout << "******************************" << endl;
 }
-
-
