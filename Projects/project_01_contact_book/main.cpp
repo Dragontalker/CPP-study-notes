@@ -21,6 +21,7 @@ struct ContactBook
 };
 
 void showMenu();
+void addContact(ContactBook*);
 
 int main()
 {
@@ -38,6 +39,7 @@ int main()
         switch(select)
         {
             case 1:
+                addContact(&contactBook);
                 break;
             case 2:
                 break;
@@ -79,4 +81,20 @@ void showMenu()
     cout << "***** 6. Clear contact *******" << endl;
     cout << "***** 0. Exit contact book ***" << endl;
     cout << "******************************" << endl;
+}
+
+void addContact(ContactBook* contactBook)
+{
+    if (contactBook->currentSize == MAX)
+    {
+        cout << "Maxium number of contacts reached, cannot add more!" << endl;
+        return;
+    }
+
+    Contact newContact;
+
+    cout << "Please enter contact's name: " << endl;
+    cin >> newContact.name;
+
+    cout << "The contact's name = " << newContact.name << endl;
 }
