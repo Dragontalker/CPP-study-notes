@@ -8,31 +8,41 @@ int main()
 {
     int select = 0;
 
-    showMenu();
-
-    cin >> select;
-
-    switch(select)
+    while(true)
     {
-        case 1:
-            break;
-        case 2:
-            break;
-        case 3:
-            break;
-        case 4:
-            break;
-        case 5:
-            break;
-        case 6:
-            break;
-        case 0:
-            break;
-        default:
-            break;
+        showMenu();
+
+        cin >> select;
+
+        switch(select)
+        {
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+            case 6:
+                break;
+            case 0:
+                cout << "Thanks for using contact book!" << endl;
+                system("pause");
+                return 0;
+                break;
+            default:
+                break;
+        }
     }
 
-    system("pause");
+
+
+
+
+
 
     return 0;
 }
