@@ -5,7 +5,7 @@
 
 using namespace std;
 
-struct Person
+struct Contact
 {
     string name;
     int gender;
@@ -14,18 +14,18 @@ struct Person
     string address;
 };
 
-struct AddressBook
+struct ContactBook
 {
     int currentSize;
-    Person personArray[MAX];
+    Contact contactArray[MAX];
 };
 
 void showMenu();
 
 int main()
 {
-    AddressBook abs;
-    abs.currentSize = 0;
+    ContactBook contactBook;
+    contactBook.currentSize = 0;
 
     int select = 0;
 
