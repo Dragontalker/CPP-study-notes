@@ -17,13 +17,16 @@ struct Person
 struct AddressBook
 {
     int currentSize;
-    struct Person personArray[MAX];
+    Person personArray[MAX];
 };
 
 void showMenu();
 
 int main()
 {
+    AddressBook abs;
+    abs.currentSize = 0;
+
     int select = 0;
 
     while(true)
