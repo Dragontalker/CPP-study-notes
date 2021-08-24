@@ -96,5 +96,8 @@ void addContact(ContactBook* contactBook)
     cout << "Please enter contact's name: " << endl;
     cin >> newContact.name;
 
-    cout << "The contact's name = " << newContact.name << endl;
+    cout << "Please enter contact's gender: " << endl;
+    cout << "Enter 1 for male." << endl;
+    cout << "Enter 2 for female." << endl;
+    cin >> newContact.gender;
 }
