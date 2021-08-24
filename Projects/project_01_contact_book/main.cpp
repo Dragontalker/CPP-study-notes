@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 
+#define MAX 100
+
 using namespace std;
 
 struct Person
@@ -10,6 +12,12 @@ struct Person
     int m_Age;
     string m_Phone;
     string m_Addr;
+};
+
+struct AddressBook
+{
+    struct Person personArray[MAX];
+    int m_Size;
 };
 
 void showMenu();
