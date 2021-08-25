@@ -1,5 +1,8 @@
 #include <iostream>
 
+int g_a = 10;
+int g_b = 10;
+
 int main()
 {
     int a = 10;
@@ -10,6 +13,12 @@ int main()
 
     std::cout << "The address of local variable b = "
               << (int)&b << std::endl;
+
+    std::cout << "The address of local variable g_a = "
+              << (int)&g_a << std::endl;
+
+    std::cout << "The address of local variable g_b = "
+              << (int)&g_b << std::endl;
 
     return 0;
 }
