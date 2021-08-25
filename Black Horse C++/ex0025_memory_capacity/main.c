@@ -3,6 +3,11 @@
 
 int main()
 {
-    printf("Hello world!\n");
+    int mb = 0;
+
+    while(malloc(1 << 20)) ++mb;
+
+    printf("Allocated %d MB total\n", mb);
+
     return 0;
 }
