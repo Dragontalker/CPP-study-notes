@@ -12,5 +12,9 @@ int main()
 
     std::cout << "a = " << a << std::endl;
 
+    a = 100;
+
+    std::cout << "b = " << b << std::endl;
+
     return 0;
 }
