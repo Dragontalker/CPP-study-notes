@@ -1,7 +1,18 @@
 #include <iostream>
 
+int* func(void);
+
 int main()
 {
-    std::cout << "Hello world!" << std::endl;
+    int* p = func();
+
+    std::cout << "The value pointed by p = " << *(p) << std::endl;
+
     return 0;
+}
+
+int* func()
+{
+    int* ptr = new int(10);
+    return ptr;
 }
