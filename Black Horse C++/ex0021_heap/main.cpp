@@ -8,6 +8,10 @@ int main()
 
     std::cout << "The value pointed by p = " << *(p) << std::endl;
 
+    free(p);
+
+    std::cout << "The value pointed by p = " << *(p) << std::endl;
+
     return 0;
 }
 
