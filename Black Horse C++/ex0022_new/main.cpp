@@ -44,4 +44,6 @@ void test02()
     {
         std::cout << arr[i] << std::endl;
     }
+
+    delete[] arr;
 }
