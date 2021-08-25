@@ -25,7 +25,7 @@ void test01()
     std::cout << *(p) << std::endl;
     std::cout << *(p) << std::endl;
 
-    delete(p);
+    delete p;
 
     std::cout << *(p) << std::endl;
 }
