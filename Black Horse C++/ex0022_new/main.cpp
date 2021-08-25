@@ -2,10 +2,11 @@
 
 int* func(void);
 void test01(void);
+void test02(void);
 
 int main()
 {
-    test01();
+    test02();
 
     return 0;
 }
@@ -28,4 +29,19 @@ void test01()
     delete p;
 
     std::cout << *(p) << std::endl;
+}
+
+void test02()
+{
+    int* arr = new int[10];
+
+    for (int i = 0; i < 10; i++)
+    {
+        arr[i] = i + 100;
+    }
+
+    for (int i = 0; i < 10; i++)
+    {
+        std::cout << arr[i] << std::endl;
+    }
 }
