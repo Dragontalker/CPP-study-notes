@@ -21,9 +21,16 @@ int main()
               << (int)&g_b << std::endl;
 
     static int s_a = 10;
+    static int s_b = 10;
 
     std::cout << "The address of local variable s_a = "
               << (int)&s_a << std::endl;
+
+    std::cout << "The address of local variable s_b = "
+              << (int)&s_b << std::endl;
+
+    std::cout << "The address of string literal = "
+              << (int)&"hello world" << std::endl;
 
     return 0;
 }
