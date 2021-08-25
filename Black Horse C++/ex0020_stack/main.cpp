@@ -1,15 +1,20 @@
 #include <iostream>
 
-int* func();
+int* func(int*);
 
 int main()
 {
-    std::cout << "Hello world!" << std::endl;
+    int a = 20;
+
+    int* p = func(&a);
+
+    std::cout << "The value at address of p = " << *(p) << std::endl;
+
     return 0;
 }
 
-int* func()
+int* func(int* a)
 {
-    int a = 10;
-    return &a;
+    *(a) = 10;
+    return a;
 }
