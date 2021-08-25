@@ -11,7 +11,7 @@ int main()
     std::cout << "The value pointed by p = " << *(p) << std::endl;
     std::cout << "The value pointed by p = " << *(p) << std::endl;
 
-    free(p);
+    delete(p);
 
     std::cout << "The value pointed by p = " << *(p) << std::endl;
     std::cout << "The value pointed by p = " << *(p) << std::endl;
