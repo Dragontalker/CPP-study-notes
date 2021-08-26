@@ -9,6 +9,8 @@ int main()
 
     func(a);
 
+    func(10);
+
     return 0;
 }
 
