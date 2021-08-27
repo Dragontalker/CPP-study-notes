@@ -1,13 +1,12 @@
 #include <iostream>
 
-#define PI 3.1415926
-
 class Circle
 {
+private:
+    const double PI = 3.1415926;
+
 public:
-
     double m_r;
-
     double calculateZC()
     {
         return 2 * PI * m_r;
