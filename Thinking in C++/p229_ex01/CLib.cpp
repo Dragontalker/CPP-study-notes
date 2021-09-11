@@ -52,6 +52,13 @@ void inflate(CStash* s, int increase) {
     s->quantity = newQuantity;
 }
 
+void cleanup(CStash* s) {
+    if(s->storage != 0) {
+        cout << "freeing storage" << endl;
+        delete []s->storage;
+    }
+} ///:~
+
 int main()
 {
     cout << "Hello world!" << endl;
