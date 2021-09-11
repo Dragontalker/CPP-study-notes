@@ -30,6 +30,15 @@ int add(CStash* s, const void* element) {
     return (s->next - 1); // Index number
 }
 
+void* fetch(CStash* s, int index) {
+    // Check index boundaries:
+    assert(0 <= index);
+    if(index >= s->next)
+        return 0;
+    // Produce pointer to desired element;
+    return &(s->storage[index * s->size]);
+}
+
 int main()
 {
     cout << "Hello world!" << endl;
