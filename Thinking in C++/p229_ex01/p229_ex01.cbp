@@ -32,12 +32,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="CLib.cpp" />
 		<Unit filename="CLib.h">
 			<Option compilerVar="CC" />
 			<Option compile="1" />
 			<Option link="1" />
 		</Unit>
-		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
