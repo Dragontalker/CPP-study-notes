@@ -39,6 +39,19 @@ void* fetch(CStash* s, int index) {
     return &(s->storage[index * s->size]);
 }
 
+void inflate(CStash* s, int increase) {
+    assert(increase > 0);
+    int newQuantity = s->quantity + increase;
+    int newBytes = newQuantity * s->size;
+    int oldBytes = s->quantity * s->size;
+    unsigned char* b = new unsigned char[newBytes];
+    for(int i = 0; i < oldBytes; i++)
+        b[i] = s->storage[i]; // Copy old to new
+    delete [](s->storage); // Old storage
+    s->storage = b; // Point to new memory
+    s->quantity = newQuantity;
+}
+
 int main()
 {
     cout << "Hello world!" << endl;
