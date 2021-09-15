@@ -5,7 +5,7 @@
 
 class Handle {
     struct Cheshire;    // Class declaration only
-    Cheshir* smile;
+    Cheshire* smile;
 public:
     void initialize();
     void cleanup();
