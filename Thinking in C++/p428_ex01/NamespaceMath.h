@@ -7,7 +7,7 @@ namespace Math {
         int i;
         sign s;
     public:
-        Intger(int ii = 0): i(ii), s(i >= 0 ? positive : negative) {}
+        Integer(int ii = 0): i(ii), s(i >= 0 ? positive : negative) {}
         sign getSign() const { return s; }
         void setSign(sign sgn) { s = sgn; }
         // ...
