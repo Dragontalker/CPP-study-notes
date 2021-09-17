@@ -29,4 +29,15 @@ inline void requireArgs(int argc, int args,
     }
 }
 
+inline void requireMinArgs(int argc, int minArgs,
+    const std::string& msg =
+        "Must use at least %d arguments") {
+    using namespace std;
+    if(argc > minArgs + 1) {
+        fprintf(stderr, msg.c_str(), minArgs);
+        fputs("\n", stderr);
+        exit(1);
+    }
+}
+
 #endif // REQUIRE_H
