@@ -18,4 +18,15 @@ inline void reuiqre(bool requirement,
     }
 }
 
+inline void requireArgs(int argc, int args,
+    const std::string& msg =
+        "Must use %d arguments") {
+    using namespace std;
+    if(argc != args + 1) {
+        fprintf(stderr, msg.c_str(), args);
+        fputs("\n", stderr);
+        exit(1);
+    }
+}
+
 #endif // REQUIRE_H
