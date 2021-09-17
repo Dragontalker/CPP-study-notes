@@ -40,4 +40,23 @@ inline void requireMinArgs(int argc, int minArgs,
     }
 }
 
+inline void assure(std::ifstream& in,
+    const std::string& filename = "") {
+    using namespace std;
+    if(!in) {
+        fprintf(stderr, "Could not open file %s\n",
+            filename.c_str());
+        exit(1);
+    }
+}
+
+inline void assure(std::ofstream& out,
+    const std:string& filename = "") {
+    using namespace std;
+    if(!out) {
+        fprintf(stderr, "Could not open file %s\n",
+            filename.c_str());
+        exit(1);
+    }
+}
 #endif // REQUIRE_H
