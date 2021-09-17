@@ -8,7 +8,7 @@
 #include <fstream>
 #include <string>
 
-inline void reuiqre(bool requirement,
+inline void require(bool requirement,
     const std::string& msg = "Requirement failed") {
     using namespace std;
     if(!requirement) {
@@ -51,7 +51,7 @@ inline void assure(std::ifstream& in,
 }
 
 inline void assure(std::ofstream& out,
-    const std:string& filename = "") {
+    const std::string& filename = "") {
     using namespace std;
     if(!out) {
         fprintf(stderr, "Could not open file %s\n",
