@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1631892819 source:c:\users\richa\desktop\githubrepos\cpp-study-notes\thinking in c++\p417_ex01\staticvariablesinfunctions.cpp
+	"../require.h"
+	<iostream>
+
+1631890063 c:\users\richa\desktop\githubrepos\cpp-study-notes\thinking in c++\require.h
+	<cstdio>
+	<cstdlib>
+	<fstream>
+	<string>
+
