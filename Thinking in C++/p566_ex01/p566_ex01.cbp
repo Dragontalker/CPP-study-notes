@@ -32,7 +32,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="main.cpp" />
+		<Unit filename="PStash.cpp" />
+		<Unit filename="PStash.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
